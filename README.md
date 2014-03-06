@@ -15,7 +15,7 @@ And then execute:
 ## Commands
 
 * `http-request-dumper.rb` : Catches all and dumps HTTP Request
-* `request-cloner.rb`      : Cloning HTTP requests to some backends
+* `http-request-cloner.rb`      : Cloning HTTP requests to some backends
 
 
 ## Contributing

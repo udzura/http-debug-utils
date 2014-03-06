@@ -14,7 +14,7 @@ HTTP Debugging toolz!!
 
 Commands:
     * http-request-dumper.rb : Catches all and dumps HTTP Request
-    * request-cloner.rb      : Cloning HTTP requests to some backends
+    * http-request-cloner.rb : Cloning HTTP requests to some backends
   EOD
   spec.homepage      = "https://github.com/udzura/http-debug-utils"
   spec.license       = "MIT"
