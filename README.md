@@ -1,24 +1,22 @@
-# Http::Debug::Utils
+# HttpDebugUtils
 
-TODO: Write a gem description
+HTTP Debug toolz for my purpose
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'http-debug-utils'
+    gem 'http-debug-utils', github: 'udzura/http-debug-utils' #, tag: 'v0.1.0'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
-Or install it yourself as:
+## Commands
 
-    $ gem install http-debug-utils
+* `http-request-dumper.rb` : Catches all and dumps HTTP Request
+* `request-cloner.rb`      : Cloning HTTP requests to some backends
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
