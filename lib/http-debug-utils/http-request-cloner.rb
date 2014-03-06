@@ -1,5 +1,4 @@
 require 'http-debug-utils'
-require 'optparse'
 require 'kage'
 
 class HttpDebugUtils
@@ -7,7 +6,7 @@ class HttpDebugUtils
     def self.run
       options = {}
 
-      parser = OptionParser.new
+      parser = HttpDebugUtils.option_parser
       parser.on("-p", "--port PORT", "Port to listen") {|port| options["port"] = port.to_i }
       parser.on("--backend-port PORT", "Port which is listened by master backend application") {|port| options["backend-port"] = port.to_i }
       parser.on("--slave-backend-port PORT", "Port which is listened by slave backend application") {|port| options["slave-backend-port"] = port.to_i }

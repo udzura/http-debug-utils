@@ -1,5 +1,4 @@
 require 'http-debug-utils'
-require 'optparse'
 require 'webrick'
 require 'json'
 
@@ -30,7 +29,7 @@ class HttpDebugUtils
 
     def self.run
       port = nil
-      parser = OptionParser.new
+      parser = HttpDebugUtils.option_parser
       parser.on("-p", "--port PORT", "Port to listen") {|_port| port = _port.to_i }
       parser.parse!(ARGV)
 
